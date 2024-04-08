@@ -107,7 +107,8 @@ nav a {
   color: #f0f0f0;
   transition: all 0.7s ease-in-out;
 }
-nav a:hover {
+nav a:hover,
+nav a:active {
   background-color: #f0f0f0;
   color: #d20062;
   border-top-left-radius: 0.8rem;
@@ -258,7 +259,8 @@ nav li:first-child {
   font-size: 1.2rem;
 }
 
-.cols a:hover {
+.cols a:hover,
+a:active {
   background-color: #fefded;
   color: #d20062;
   border-top-left-radius: 0.5rem;
@@ -308,7 +310,8 @@ nav li:first-child {
   padding: 1rem;
 }
 
-.social-links a:hover {
+.social-links a:hover,
+a:active {
   background-color: #fefded;
   color: #d20062;
   border-top-left-radius: 0.5rem;
@@ -331,7 +334,7 @@ hr {
     flex-basis: 100%;
   }
   .location {
-    transform: translateX(-125px);
+    transform: translateX(-85px);
   }
 }
 
@@ -352,13 +355,13 @@ hr {
 }
 #about,
 #portfolio,
-#achievement {
+#Achievment {
   padding: 2rem;
   margin: 2rem;
 }
 #about h1,
 #portfolio h1,
-#achievement h1 {
+#Achievment h1 {
   font-size: 3rem;
   color: #d20062;
   padding-bottom: 0.3rem;
@@ -368,10 +371,13 @@ hr {
 
 #about p,
 #portfolio p,
-#achievement p {
+#Achievment p {
   padding-bottom: 1rem;
 }
 
+#Achievment p {
+  color: #333;
+}
 .columns:nth-child(2) {
   flex-basis: 60%;
   padding: 3rem;
@@ -424,7 +430,7 @@ hr {
   }
   #about,
   #portfolio,
-  #achievement {
+  #Achievment {
     padding: 0;
   }
 }
@@ -583,15 +589,17 @@ figure:hover footer {
   }
 }
 
-/* Achievement Section */
+/* Achievment Section */
 
 .certificate {
   width: 400px;
-  height: 400px;
-  object-fit: contain;
-  aspect-ratio: 4/3;
+  height: 500px;
+  object-fit: fill;
+  /* aspect-ratio: 9/6; */
   margin: 0 auto;
   cursor: pointer;
+
+  padding-block: 1.5rem;
 
   transition: transform 0.5s ease-in-out;
 }
@@ -599,7 +607,7 @@ figure:hover footer {
 .certificate:hover {
   transform: translateY(-1rem);
 }
-#achievement {
+#Achievment {
   margin: 0;
   padding: 2rem;
 
